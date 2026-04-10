@@ -4,7 +4,7 @@ export default defineConfig({
   title: "Restaurant API",
   description: "Documentazione ufficiale multi-tenant",
   // Fondamentale per GitHub Pages: deve corrispondere al nome della tua repo
-  base: '/nome-della-tua-repo/', 
+  base: '/restaurant-api-docs/', 
   
   themeConfig: {
     nav: [
