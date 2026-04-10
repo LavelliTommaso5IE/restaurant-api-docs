@@ -1,18 +1,48 @@
-# Restaurant API Documentation
+---
+layout: home
 
-Benvenuti nella documentazione ufficiale della **Restaurant API**. Questa piattaforma è progettata per gestire più ristoranti contemporaneamente (Multi-tenancy) attraverso un'architettura a database isolati.
+hero:
+  name: "Restaurant API"
+  text: "Documentazione Ufficiale"
+  tagline: "Sistema Multi-tenant scalabile per la gestione della ristorazione"
+  actions:
+    - theme: brand
+      text: Inizia dalla Guida
+      link: /guide/multitenancy
+    - theme: alt
+      text: API Reference
+      link: /api/central
+---
 
-## Architettura del Progetto
-Il sistema utilizza un approccio multi-tenant basato su domini:
-- **Dominio Centrale**: Utilizzato per l'amministrazione e la creazione di nuovi tenant.
-- **Tenant Domains**: Ogni ristorante ha il proprio sottodominio (es. `ristorante-1.localhost`) e il proprio database dedicato.
+<br><br>
 
 ## Caratteristiche Principali
-- **Isolamento Dati**: Ogni tenant ha un database fisico separato.
-- **Autenticazione Sicura**: Gestita tramite JWT memorizzati in cookie HTTP-Only.
-- **Gestione Permessi**: Sistema RBAC (Role-Based Access Control) granulare.
 
-## Navigazione Rapida
-- [Configurazione Centrale](./central-api.md)
-- [Autenticazione](./auth.md)
-- [Risorse Tenant](./tenant-resources.md)
+<div class="features">
+  <div class="feature">
+    <h3>🏢 Multi-Tenancy</h3>
+    <p>Isolamento totale dei dati. Ogni ristorante ha il proprio database e il proprio sottodominio dinamico.</p>
+  </div>
+  <div class="feature">
+    <h3>🔒 Sicurezza Avanzata</h3>
+    <p>Autenticazione basata su JWT con cookie HTTP-Only per la massima protezione contro attacchi XSS.</p>
+  </div>
+  <div class="feature">
+    <h3>🛡️ Gestione Permessi</h3>
+    <p>Sistema di ruoli e permessi granulare per gestire lo staff (Admin, Camerieri, Cuochi, ecc).</p>
+  </div>
+</div>
+
+<style>
+.features {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+.feature {
+  flex: 1;
+  background: var(--vp-c-bg-soft);
+  padding: 20px;
+  border-radius: 8px;
+}
+</style>
