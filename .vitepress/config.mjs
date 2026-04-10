@@ -28,7 +28,7 @@ export default defineConfig({
       }
     ],
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/tuo-utente/nome-repo' }
+      { icon: 'github', link: 'https://github.com/LavelliTommaso5IE' }
     ]
   }
 })
