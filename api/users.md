@@ -6,7 +6,7 @@ Endpoint per gestire i dipendenti e gli utenti del ristorante.
 
 ## Lista Utenti - GET
 **Endpoint:** `GET /api/users`  
-**Permesso richiesto:** `view_users`
+**Permesso richiesto:** `view_users`  
 **Descrizione:** Questo endpoint restituisce all'utente autorizzato una lista di tutti gli utenti registrati nel ristorante.
 
 **Esempio di risposta (200 OK)**:
