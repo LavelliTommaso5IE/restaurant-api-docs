@@ -10,7 +10,7 @@ Endpoint per gestire i dipendenti e gli utenti del ristorante.
 **Descrizione:** Questo endpoint restituisce all'utente autorizzato una lista di tutti gli utenti registrati nel ristorante.
 
 **Esempio di risposta (200 OK)**:
-```yaml
+```json
 {
   "message": "Lista utenti",
   "data": [
